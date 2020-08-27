@@ -1,0 +1,84 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/aravindsridharamoorthy/Documents/pact-online-course-1-3.0/provider/PactTests.csproj": {}
+  },
+  "projects": {
+    "/Users/aravindsridharamoorthy/Documents/pact-online-course-1-3.0/provider/PactTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/aravindsridharamoorthy/Documents/pact-online-course-1-3.0/provider/PactTests.csproj",
+        "projectName": "PactTests",
+        "projectPath": "/Users/aravindsridharamoorthy/Documents/pact-online-course-1-3.0/provider/PactTests.csproj",
+        "packagesPath": "/Users/aravindsridharamoorthy/.nuget/packages/",
+        "outputPath": "/Users/aravindsridharamoorthy/Documents/pact-online-course-1-3.0/provider/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/aravindsridharamoorthy/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[15.8.0, )"
+            },
+            "Microsoft.VisualStudio.TestPlatform": {
+              "target": "Package",
+              "version": "[14.0.0.1, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.10.1, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[3.10.0, )"
+            },
+            "PactNet": {
+              "target": "Package",
+              "version": "[2.0.17, )"
+            },
+            "PactNet.OSX": {
+              "target": "Package",
+              "version": "[2.0.17, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

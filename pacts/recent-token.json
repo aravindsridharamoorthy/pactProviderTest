@@ -1,0 +1,40 @@
+{
+  "consumer": {
+    "name": "Recent"
+  },
+  "provider": {
+    "name": "token"
+  },
+  "interactions": [
+    {
+      "description": "Get user token",
+      "providerState": "user token",
+      "request": {
+        "method": "GET",
+        "path": "/token/1234",
+        "headers": {
+          "Accept": "application/json, text/plain, */*"
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "token": "bearer"
+        },
+        "matchingRules": {
+          "$.body.token": {
+            "match": "type"
+          }
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}

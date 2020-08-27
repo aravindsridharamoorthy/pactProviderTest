@@ -1,0 +1,54 @@
+I, [2020-08-25T08:15:24.597606 #19365]  INFO -- : Registered expected interaction GET /token/1234
+D, [2020-08-25T08:15:24.597859 #19365] DEBUG -- : {
+  "description": "Get user token",
+  "providerState": "user token",
+  "request": {
+    "method": "GET",
+    "path": "/token/1234",
+    "headers": {
+      "Accept": "application/json, text/plain, */*"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "token": {
+        "json_class": "Pact::SomethingLike",
+        "contents": "bearer"
+      }
+    }
+  },
+  "metadata": null
+}
+I, [2020-08-25T08:15:24.606532 #19365]  INFO -- : Received request GET /token/1234
+D, [2020-08-25T08:15:24.606626 #19365] DEBUG -- : {
+  "path": "/token/1234",
+  "query": "",
+  "method": "get",
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "User-Agent": "axios/0.19.2",
+    "Host": "localhost:1234",
+    "Connection": "close",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2020-08-25T08:15:24.606865 #19365]  INFO -- : Found matching response for GET /token/1234
+D, [2020-08-25T08:15:24.606954 #19365] DEBUG -- : {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "token": {
+      "json_class": "Pact::SomethingLike",
+      "contents": "bearer"
+    }
+  }
+}
+I, [2020-08-25T08:15:24.608093 #19365]  INFO -- : Verifying - interactions matched
+I, [2020-08-25T08:15:24.615798 #19365]  INFO -- : Cleared interactions
+I, [2020-08-25T08:15:24.621003 #19365]  INFO -- : Writing pact for token to /Users/aravindsridharamoorthy/Documents/pact-online-course-1-3.0/pacts/recent-token.json
